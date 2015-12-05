@@ -33,7 +33,7 @@ streamB.emit('message', 'hello it s streamB')     // - emit a 'message' event fr
                                                   //   because it s a stream-messenger,
                                                   //   it bubbles-up the event to streamA.
                                                   // - streamA re emits into streamC,
-                                                  //   streamC process streamA's events.
+                                                  //   streamC process streamB's events.
                                                   //
 ```
 
