@@ -10,13 +10,13 @@ streamA.pipe(streamB)                             // when they are piped togethe
                                                   // Now, let s say you want to process,
 var streamC  = streamMsger('streamC');            // all those bubbled events into a new stream.
                                                   //
-var writer = eventStream();                       // With event-stream-writer
-streamA.on('message', writer.stdin);              // transforms bubbled 'message' events
-writer.stdout.pipe(streamC);                      // back into piped data
+var writer = eventStream('message', streamA);     // With event-stream-writer
+                                                  // transform bubbled 'message' events
+writer.pipe(streamC);                             // back into piped data of streamC
 
 streamC.on('data', function (d) {                 // streamC now re-emits
-  console.log(d)                                  // streamB 'message' events
-});                                               // as a reguar 'data' event.
+  console.log(d + ', from streamC !')             // streamB 'message' events
+});                                               // as a regular 'data' event.
 
 streamB.emit('message', 'hello it s streamB')     // - emit a 'message' event from streamB,
                                                   //   because it s a stream-messenger,
