@@ -4,7 +4,7 @@ Stream which bubbles `message` and `error` events.
 
 ## Install
 
-	npm i stream-messenger --save
+	npm i maboiteaspam/stream-messenger --save
 
 ## Usage
 
