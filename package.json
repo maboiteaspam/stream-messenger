@@ -1,12 +1,21 @@
 {
   "name": "stream-messenger",
   "version": "1.0.0",
-  "description": "",
+  "description": "Stream which bubbles `message` and `error` events",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "stream",
+    "bubble"
+  ],
+  "author": "maboiteaspam",
+  "license": "WTF",
+  "devDependencies": {
+    "event-stream-writer": "maboiteaspam/event-stream-writer"
+  },
+  "dependencies": {
+    "bubbled": "maboiteaspam/bubbled"
+  }
 }
