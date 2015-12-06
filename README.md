@@ -42,5 +42,8 @@ streamB.emit('message', 'hello it s streamB')     // - emit a 'message' event fr
 You can see it in action in `npi`
 
 - https://github.com/maboiteaspam/npi
+- https://github.com/maboiteaspam/stream-message-router
+- https://github.com/maboiteaspam/flower
+- https://github.com/maboiteaspam/bubbler
 - https://github.com/maboiteaspam/bubbled
 - https://github.com/maboiteaspam/event-stream-writer
