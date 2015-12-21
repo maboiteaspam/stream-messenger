@@ -1,5 +1,5 @@
 
-var eventStream = require('event-stream-writer')
+var eventStream = require('@maboiteaspam/event-stream-writer')
 var streamMsger = require('./index')
 
 var streamA  = streamMsger('streamA');            // Let s say there 2 stream-messenger,

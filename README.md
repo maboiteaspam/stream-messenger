@@ -4,14 +4,14 @@ Stream which bubbles `message` and `error` events.
 
 ## Install
 
-	npm i maboiteaspam/stream-messenger --save
+	npm i @maboiteaspam/stream-messenger --save
 
 ## Usage
 
 ```js
 
-var eventStream = require('event-stream-writer')
-var streamMsger = require('stream-messenger')
+var eventStream = require('@maboiteaspam/event-stream-writer')
+var streamMsger = require('@maboiteaspam/stream-messenger')
 
 var streamA  = streamMsger('streamA');            // Let s say there 2 stream-messenger,
 var streamB  = streamMsger('streamB');

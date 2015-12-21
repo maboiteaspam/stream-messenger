@@ -1,21 +1,30 @@
 {
-  "name": "stream-messenger",
+  "name": "@maboiteaspam/stream-messenger",
   "version": "1.0.0",
   "description": "Stream which bubbles `message` and `error` events",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dcheck": "npm outdated --depth=0",
+    "patch": "npm version patch -m \"patch %s\"",
+    "minor": "npm version minor -m \"minor %s\"",
+    "major": "npm version major -m \"major %s\"",
+    "preversion": "echo \"npm test: undefined\" && npi --explicit",
+    "version": "echo \"npm run build: undefined\"",
+    "postversion": "git push && git push --tags && npm run public",
+    "public": "npm publish --access=public"
   },
   "keywords": [
     "stream",
-    "bubble"
+    "bubble",
+    "event"
   ],
   "author": "maboiteaspam",
   "license": "WTF",
   "devDependencies": {
-    "event-stream-writer": "maboiteaspam/event-stream-writer"
+    "@maboiteaspam/event-stream-writer": "^2.0.1"
   },
   "dependencies": {
-    "bubbled": "maboiteaspam/bubbled"
+    "@maboiteaspam/bubbled": "^2.0.0"
   }
 }

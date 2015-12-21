@@ -1,4 +1,4 @@
-var bubbled = require('bubbled')
+var bubbled = require('@maboiteaspam/bubbled')
 
 var k = 0;
 
