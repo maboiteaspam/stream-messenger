@@ -1,6 +1,6 @@
 {
   "name": "@maboiteaspam/stream-messenger",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Stream which bubbles `message` and `error` events",
   "main": "index.js",
   "scripts": {
@@ -22,9 +22,9 @@
   "author": "maboiteaspam",
   "license": "WTF",
   "devDependencies": {
-    "@maboiteaspam/event-stream-writer": "^2.0.1"
+    "@maboiteaspam/event-stream-writer": ">=2.0.1 <3.0.0-0"
   },
   "dependencies": {
-    "@maboiteaspam/bubbled": "^2.0.0"
+    "@maboiteaspam/bubbled": ">=2.0.0 <3.0.0-0"
   }
 }
